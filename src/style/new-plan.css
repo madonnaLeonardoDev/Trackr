@@ -1,0 +1,71 @@
+.new-plan-textbox{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: inline-block;
+    color: var(--base-color);
+    line-height: 1.5;
+    padding: 10px;
+}
+.inline-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    margin: 0 0.25rem;
+}
+.new-plan-empty-flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.new-plan-toolbar{
+    padding: var(--page-padding) 0 var(--page-padding);
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    justify-self: flex-start;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.nptb-create{
+    margin: 10px;
+    color: var(--base-color);
+    aspect-ratio: 1/1;
+    width: 30px;
+}
+.new-plan-input{
+    background: transparent;      /* Removes the box background */
+    border: none;                 /* Removes all default borders */
+    border-bottom: 2px solid var(--secondary); /* Creates the clean underline */
+    border-radius: 0;             /* Removes any default rounded corners */
+    padding: 8px 4px;             /* Adds breathing room for text and the line */
+    color: var(--base-color);     /* Keeps your text color clean */
+    font-size: var(--desc-font-s);
+    outline: none;
+
+}
+.new-plan-arg-input{
+    padding: 5px;
+    margin-right: 10px;
+    display: flex;
+    margin: 5px 0 5px;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-arg);
+}
+.entry-num{
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    color: var(--base-color);
+    font-size: var(--desc-font-s);
+    margin-left: auto;
+}
+#template-blocks{
+    height:fit-content !important;
+}

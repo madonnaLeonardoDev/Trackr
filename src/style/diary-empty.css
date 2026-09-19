@@ -1,0 +1,26 @@
+.empty-diary{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.add-plan-empty-state{
+    font-size: var(--middle-font-s);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 50%;
+    max-width: 300px;
+    margin-top: 25vh;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary);
+    color: var(--base-color);
+}
+.add-plan-icon{
+    margin: 5px;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    width: 50%;
+    background-size: contain;
+}

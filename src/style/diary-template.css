@@ -1,0 +1,99 @@
+.diary-template{
+    width: 100%;
+    height: fit-content;
+}
+.template-title{
+    padding: var(--page-padding);
+}
+.template-title p{
+    font-size: var(--title-font-s);
+    margin-bottom: 5px;
+}
+
+.diary-block{
+    margin: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.diary-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+    padding: 15px;
+}
+
+.section-title{
+    display: flex;
+}
+.section-title p{
+    font-size: var(--middle-font-s);
+    align-self: flex-start;
+}
+.add-entry-btn{
+    margin-left: auto;
+    aspect-ratio: 1/1;
+    width: 25px;
+    color: var(--base-color);
+}
+
+.args-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: fit-content;
+}
+.arg{
+    font-size: var(--desc-font-s);
+    padding: 5px;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius-arg);
+    width: fit-content;
+}
+.arg input{
+    color: var(--base-color);
+    background-color: var(--secondary);
+    width: 30px;
+
+}
+.entry-counter{
+    width: fit-content;
+    align-self: flex-end;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.diary-entry{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+.entry-box{
+    padding: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary);
+    height: fit-content;
+    align-self: flex-end;
+}
+.entry-flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.entry-vline-flexbox{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry-vline{
+    height: 50%;
+    width: 3px;
+    border-radius: var(--border-radius-arg);
+    background-color: var(--accents);
+}

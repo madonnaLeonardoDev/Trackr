@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Trackr - Gym Tracker</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+        <section id="diary" class="view">
+
+            <section id="diary-state-empty" class="view">
+                <div class="empty-diary">
+                    <button class="add-plan-empty-state">
+                        <span>Add Plan</span>
+                        <div class="plus-circle-icon add-plan-icon icon"></div>
+                </button>
+                </div>
+                
+            </section>
+
+            <section id="diary-state-filled" class="view">
+                <div class="navbar-bottom-margin">
+                <div class="diary-template">
+
+                    <div class="template-title">
+                        <p>Giorno 1</p>
+                        <div class="divisor"></div>
+                    </div>
+                    
+                    <div class="diary-block">
+
+                        <div class="diary-section">
+
+                            <!-- SECTION COMPONENT-->
+                            <div class="section-title">
+                                <p>Pec Deck</p>
+                                <button class="add-entry-btn plus-circle-icon icon"></button>
+                            </div>
+                            <div class="section-grid">
+                                <div class="args-box">
+                                    <div class="arg">
+                                    seat
+                                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                    </div>
+                                    <div class="arg">
+                                    name
+                                    <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                    </div>
+                                </div>
+                                <div class="entry-counter">1/3</div>
+                            </div>
+
+                            <!-- SECTION COMPONENT-->
+                        </div>
+
+                        <div class="diary-entry">
+                            <div class="entry-vline-flexbox">
+                                <div class="entry-vline"></div>
+                            </div>
+                                <div class="entry-box">
+                                    <div class="section-grid">
+                                        <div class="args-box">
+                                            <div class="arg">
+                                            seat
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                            <div class="arg">
+                                            name
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                        </div>
+                                        <div class="entry-counter">1/3</div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="diary-entry">
+                            <div class="entry-vline-flexbox">
+                                <div class="entry-vline"></div>
+                            </div>
+                                <div class="entry-box">
+                                    <div class="section-grid">
+                                        <div class="args-box">
+                                            <div class="arg">
+                                            seat
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                            <div class="arg">
+                                            name
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                        </div>
+                                        <div class="entry-counter">1/3</div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="diary-entry">
+                            <div class="entry-vline-flexbox">
+                                <div class="entry-vline"></div>
+                            </div>
+                                <div class="entry-box">
+                                    <div class="section-grid">
+                                        <div class="args-box">
+                                            <div class="arg">
+                                            seat
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                            <div class="arg">
+                                            name
+                                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0">
+                                            </div>
+                                        </div>
+                                        <div class="entry-counter">1/3</div>
+                                    </div>
+                            </div>
+                        </div>
+
+                    <!-- ENTRY COMPONENT-->
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section id="new-plan" class="view active">
+
+            <div class="new-plan-toolbar">
+                <span>Add new Section</span>
+                <button class="nptb-create plus-circle-icon icon"></button>
+            </div>
+
+            <section id="template-blocks" class="view">
+                <div class="navbar-bottom-margin">
+                    <div class="new-plan-block">
+                                <div class="diary-block">
+                                        <div class="diary-section">
+                                            <!-- SECTION COMPONENT-->
+                                            <div class="section-title">
+                                                <input type="text" placeholder="Section Title" class="new-plan-input">
+                                                <button class="entry-num">/1</button>
+                                            </div>
+                                            <div class="section-grid">
+                                                <div class="args-box">
+                                                    <div class="new-plan-arg-input">
+                                                    <input type="text" placeholder="Data Name" class="new-plan-input">
+                                                    <input type="text" placeholder="Data Type" class="new-plan-input">
+                                                    </div>
+                                                    <div class="new-plan-arg-input">
+                                                    <input type="text" placeholder="Data Name" class="new-plan-input">
+                                                    <input type="text" placeholder="Data Type" class="new-plan-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- SECTION COMPONENT-->
+                                        </div>
+
+                                        <div class="diary-entry">
+                                            <div class="entry-vline-flexbox">
+                                                <div class="entry-vline"></div>
+                                            </div>
+                                                <div class="entry-box">
+                                                    <div class="section-grid">
+                                                        <div class="args-box">
+                                                    <div class="new-plan-arg-input">
+                                                    <input type="text" placeholder="Data Name" class="new-plan-input">
+                                                    <input type="text" placeholder="Data Type" class="new-plan-input">
+                                                    </div>
+                                                    <div class="new-plan-arg-input">
+                                                    <input type="text" placeholder="Data Name" class="new-plan-input">
+                                                    <input type="text" placeholder="Data Type" class="new-plan-input">
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    <!-- ENTRY COMPONENT-->
+                                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-plan-empty view">
+                <div class="new-plan-empty-flexbox">
+                    <div class="new-plan-textbox">
+                        click the <span class="plus-circle-icon icon inline-icon"></span> icon on the top to create a new plan
+                    </div>
+                </div>
+                    
+            </section>
+        </section>
+
+        <nav class="bottom-nav">
+            <button>
+                <div class="checklist-icon bottom-nav-icon icon"></div>
+                <span>Diary</span>
+            </button>
+            <button>
+                <div class="plus-circle-icon bottom-nav-icon icon"></div>
+                <span>New Plan</span>
+            </button>
+            <button>
+                <div class="graph-icon bottom-nav-icon icon"></div>
+                <span>Stats</span>
+            </button>
+        </nav>
+    </div>
+    <link rel="stylesheet" href="src/style/stylesheet.css">
+    <link rel="stylesheet" href="src/style/bottom-nav.css">
+    <link rel="stylesheet" href="src/style/diary-empty.css">
+    <link rel="stylesheet" href="src/style/diary-template.css">
+    <link rel="stylesheet" href="src/style/new-plan.css">
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

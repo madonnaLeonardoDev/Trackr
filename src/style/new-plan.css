@@ -69,3 +69,18 @@
 #template-blocks{
     height:fit-content !important;
 }
+.new-plan-save-box{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    width: 90%;
+    height: fit-content;
+}
+.new-plan-save-box input{
+    background-color: var(--secondary);
+    color: var(--base-color);
+}
